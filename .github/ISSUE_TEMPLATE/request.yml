@@ -1,0 +1,77 @@
+name: 申请收录
+description: 申请加入开往选这个
+title: "[网站名称]"
+labels: ["申请收录"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ↑ 请将上方的 Title 中的 [网站名称] 替换成您实际的网站名称 ！
+        **特别提醒：1. 申请提交后，请勿对模板内容进行二次修改；2. 审核通过后，不要自行关闭 Issue，请等待管理员手动入库信息。**
+  - type: input
+    id: name
+    attributes:
+      label: 网站名称
+      description: 会在 [开往成员列表](https://list.travellings.cn/) 中展示
+      placeholder: ex. 开往
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: 网站网址
+      description: |
+        必须是 http**s** 网站（请带上“https://”协议头）；
+        `bar, best, cloud, digital, guru, life, live, miami, online, rest, shop, site, store, surf, today, website, world, space, fun` 这些域名往往购买时便宜，但第二年续费会在 100 元以上，你会坚持用这个域名吗？如果你更新了域名，记得打开 issues 更新信息。
+      placeholder: ex. https://travellings.link
+    validations:
+      required: true
+  - type: checkboxes
+    id: place
+    attributes:
+      label: 徽标位置
+      description: |
+        只放在“网页底部”，或只放在“默认收起的菜单里”，审核通过率较低。请放在打开网页后能**直接看到的地方**（顶栏或固定的侧栏是不错的选择，可参见 Readme 或已收录的网站）别忘记检查**手机端**是否能看到开往徽标（手机端**允许**放置在折叠的菜单中）；
+      options:
+        - label: 顶栏
+        - label: 侧栏
+        - label: 底部（只选此项一般无法通过审核）
+        - label: 其它
+  - type: input
+    id: otherplace
+    attributes:
+      label: 更具体的徽标位置
+      description: |
+        如果您的徽标位置选择了「其它」，请在这里告诉我们您具体放置在了哪个位置。
+  - type: dropdown 
+    id: content
+    attributes:
+      label: 内容方向
+      description: |
+        请在此选择您的网站（博客）的内容方向，非博客请选择“其它”。这一项选择会影响博客网站审核的分配，技术类博客和生活类博客的审核条件不一。
+      options:
+        - 技术类博客
+        - 生活类博客
+        - 生活兼技术
+        - 论坛
+        - 其它
+    validations:
+      required: true
+  - type: input
+    id: remark
+    attributes:
+      label: 备注
+      description: |
+        如果您还有其它要说的内容，可以在这里填写。
+  - type: checkboxes
+    id: checkagain
+    attributes:
+      label: 请确认以下事项
+      description: |
+        1. **我已仔细阅读[加入条件](https://www.travellings.cn/docs/join.html)以及[疑难解答](https://www.travellings.cn/docs/qa)中的内容且满足收录条件。**
+        2. 我的信息填写正确，若有变动如更新网址等会及时通知更正。
+        3. 开往会定期观测您网站的在线状况，国内无法访问正常的网站会被移除项目。
+        4. 开往维护组成员会在空闲时间内审核您的网站。若您的加入申请超过 1 个月还未审核，可以在下方 @ 最近活跃的维护组成员，或通过其它我们已经公示的联系渠道联系。
+      options:
+        - label: 我已确认以上事项
+          required: true
