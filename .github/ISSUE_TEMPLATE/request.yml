@@ -1,0 +1,84 @@
+name: 申请收录
+description: 申请加入咕链选这个
+title: "[专栏名称]"
+labels: ["申请收录"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ↑ 请将上方的 Title 中的 [专栏名称] 替换成您实际的专栏名称（如果是云剪贴板或主页请自行命名） ！
+        **特别提醒：1. 申请提交后，请勿对模板内容进行二次修改；2. 审核通过后，不要自行关闭 Issue，请等待管理员手动入库信息。**
+
+  - type: input
+    id: name
+    attributes:
+      label: 专栏名称
+      description: 会在 [开往成员列表](https://list.gugo.qzz.io/) 中展示，建议同上。
+      placeholder: ex. 咕链
+    validations:
+      required: true
+
+  - type: input
+    id: website
+    attributes:
+      label: 网站网址
+      description: |
+        请带上 `https://` 协议头，如果是已经**公开发表在洛谷文章区**（即无需 luogu.me 访问）的**专栏**，请使用 `https://luogu.com.cn/article/...`，否则**建议**使用 `https://luogu.me/...`，除非你认为 `luogu.qzz.io` 的访问效果更好。
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: place
+    attributes:
+      label: 外链位置
+      description: |
+        只放在“网页底部”，或只放在“默认收起的菜单里”，审核通过率较低。请放在打开网页后能**直接看到的地方**（顶栏或固定的侧栏是不错的选择，可参见 Readme 或已收录的网站）别忘记检查**手机端**是否能看到开往徽标（手机端**允许**放置在折叠的菜单中）；
+      options:
+        - label: 顶部
+        - label: 中间
+        - label: 底部（只选此项一般无法通过审核）
+
+  - type: input
+    id: otherplace
+    attributes:
+      label: 更具体的徽标位置
+      description: |
+        如果您的徽标位置选择了「其它」，请在这里告诉我们您具体放置在了哪个位置。
+
+  - type: dropdown
+    id: content
+    attributes:
+      label: 内容方向
+      description: |
+        请在此选择您的文章的内容方向。这一项选择会影响文章审核的分配，如果选择 LATEX 文章或网址收集文章，请确保仔细阅读[相关文档](http://docs.rusin.qzz.io/gugo/join#%E6%96%87%E7%AB%A0%E6%9B%B4%E6%96%B0%E3%80%81%E5%86%85%E5%AE%B9%E5%92%8C%E8%B4%A8%E9%87%8F)。
+      options:
+        - 题解
+        - 科技·工程
+        - 算法·理论
+        - 生活·游记
+        - 学习·文化课
+        - 休闲·娱乐
+        - LATEX 文章或网址收集文章
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: remark
+    attributes:
+      label: 备注
+      description: |
+        如果您还有其它要说的内容，可以在这里填写。
+
+  - type: checkboxes
+    id: checkagain
+    attributes:
+      label: 请确认以下事项
+      description: |
+        1. **我已仔细阅读[加入条件](https://docs.rusin.qzz.io/gugo/join)以及[疑难解答](https://docs.rusin.qzz.io/gugo/qa)中的内容且满足收录条件。**
+        2. 我的信息填写正确，若有变动如更新文章地址等会及时通知更正。
+        3. 咕链会定期观测您文章的在线状况，被删除的文章会被移除项目。
+        4. 我们会在空闲时间内审核您的文章。若您的加入申请超过 1 个月还未审核，可以在洛谷帖子下 @ 我，或通过其它我已经公示的联系渠道联系。
+      options:
+        - label: 我已确认以上事项
+          required: true
