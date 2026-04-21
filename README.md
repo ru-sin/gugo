@@ -1,64 +1,36 @@
-![screenshot](https://mp-bca925c9-72bc-4e92-8c87-d596015241bf.cdn.bspapp.com/2024/06/29/48052030-56853423-SafariLight.png)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-# [inWind Landing Page Template](https://landingpage.huglemon.com/)
+## Getting Started
 
-🌍 *[English](README.md) ∙ [简体中文](README-zh.md)*
+First, run the development server:
 
-### What is inWind Landing Page
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-inWind Landing Page is a Landing Page template developed for global SaaS projects based on Next.js. It is completely open source, free, and offers perfect SEO and multi-language support.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Why develop inWind Landing Page
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-1. First, influenced by the big shot @weijunext, I decided to also open source a Landing Page for everyone to choose from;
-2. Secondly, I have also been developing independent B2B websites for traditional factories recently, but my original uni-app development is a SPA project, which is very unfriendly to SEO, so I re-studied Next.js development, which is also a practice project;
-3. Finally, I also hope to use this project to meet more global partners. If it is helpful to you or if you need any other help, you can contact me to exchange ideas~
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### Performance and SEO
+## Learn More
 
-![Performance and SEO](https://mp-bca925c9-72bc-4e92-8c87-d596015241bf.cdn.bspapp.com/2024/06/29/50354654-99418765-SafariLight.png)
+To learn more about Next.js, take a look at the following resources:
 
-### Third-party libraries used
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- [DaisyUI](https://daisyui.com/): Used to implement multi-theme switching and some basic styles (recommended for friends who have never used TailwindCSS, you can try it, you can remember fewer class names)
-- [framer-motion](https://www.framer.com/motion/): Used to complete most of the animation effects
-- [react-icons](https://react-icons.github.io/react-icons/): Recommended for React developers, a very convenient and comprehensive icon library
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Deploy on Vercel
 
-### Online Preview
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-[landingpage.huglemon.com](https://landingpage.huglemon.com/)
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=huglemon/inwind-landing-page&type=Date)](https://star-history.com/#huglemon/inwind-landing-page&Date)
-
-
-### Thanks and Support
-
--   Thanks to [@weijunext](https://weijunext.com/) for the open-source landingpage project, which referenced a lot of content
-
-### Contributors
-
-<a href="https://github.com/huglemon/inwind-landing-page/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=huglemon/inwind-landing-page" />
-</a>
-
-### Let's be friends
-
--   QQ: 123060128
--   Twitter: [@huglemon520](x.com/huglemon520)
--   Email: [karma.zhao@gmail.com](mailto:karma.zhao@gmail.com)
--   Blog: [https://huglemon.com](https://huglemon.com)
-
-### Sponsorship
-
-If this project is helpful to you, you can buy me a can of Red Bull or a cofee
-
-[![buymeacoffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png "buymeacoffee")](https://buymeacoffee.com/huglemon "buymeacoffee")
-![pay qrcode](https://mp-bca925c9-72bc-4e92-8c87-d596015241bf.cdn.bspapp.com/2024/06/29/48706370-14858221-WechatIMG135.jpg)
-
-### Ads
-[![Generate your Labubu wallpaper](https://labububox.app/og.png)](https://labububox.app "Labubu Wallpaper Box - Generate your Labubu wallpaper with AI and free download")
-[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
